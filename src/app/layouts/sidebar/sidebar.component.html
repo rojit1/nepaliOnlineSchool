@@ -6,6 +6,32 @@
                 <i class="fa fa-times"></i>
             </div>
         </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li class="sidebar-dropdown">
+                    <a routerLink="/sign-in">
+                        <i class="fa fa-sign-in"></i>
+                        <span>Sign in</span>
+                        <span class="badge badge-pill badge-warning">New</span>
+                    </a>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a routerLink="/register">
+                        <i class="fa fa-user-plus"></i>
+                        <span>Register</span>
+                        <span class="badge badge-pill badge-warning">New</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div *ngIf="false" class="sidebar-content">
+        <div style="background-color:rgb(165, 154, 154) ;" class="sidebar-brand">
+            <a href="#">N.O.T</a>
+            <div id="close-sidebar">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
         <div class="sidebar-header">
             <div class="user-pic">
                 <img class="img-responsive img-rounded"

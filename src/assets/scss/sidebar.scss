@@ -130,6 +130,17 @@ body {
   overflow-y: auto;
   position: relative;
 }
+.sidebar-content::after {
+  content: "";
+  background: url("src/assets/img/sidebar.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 
 .sidebar-content.desktop {
   overflow-y: hidden;
@@ -354,7 +365,7 @@ body {
   display: inline-block;
   width: 100%;
   padding-left: 0px;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .page-wrapper .page-content > div {
